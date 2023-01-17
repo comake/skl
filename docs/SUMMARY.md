@@ -2,8 +2,8 @@
 
 * [Introduction](README.md)
 * [Fundamentals](fundamentals.md)
+* [Conceptual Example](conceptual-example.md)
 * [Ecosystem](ecosystem.md)
-* [Use Cases](use-cases.md)
 
 ## Get Started
 
@@ -13,3 +13,4 @@
 ## Other
 
 * [Terminology](terminology.md)
+* [Use Cases](use-cases.md)

@@ -12,5 +12,6 @@
 
 ## Other
 
+* [FAQs](faqs.md)
 * [Terminology](terminology.md)
 * [Use Cases](use-cases.md)

@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Schema Fundamentals](schema-fundamentals.md)
+* [Schemas](schemas.md)
 * [Engines](engines.md)
 * [Ecosystem](ecosystem.md)
 

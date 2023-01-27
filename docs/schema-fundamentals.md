@@ -8,7 +8,7 @@ Standard Knowledge Language defines abstractions of data and capabilities throug
 
 ### Standard Knowledge Schemas
 
-When building software SKL, schemas are used for three main purposes:
+When building software with SKL, schemas are used for three main purposes:
 1. to describe and document data structures
 2. to validate that data conforms to specific data structures
 3. as configuration detailing what capabilities are possible and how those capabilities are performed

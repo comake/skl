@@ -36,7 +36,7 @@ The developers of [Google Drive](https://www.google.com/drive/), [Dropbox](https
 In this way, Nouns are abstractions of the commonalities between each Integration’s representation of a concept but are also extendable and customizable, allowing the unique fields each tool has to still exist on entities.
 
 #### Entity {#entity}
-An instance of a Noun which conforms to the Noun's schema.
+An entity is an instance of a Noun which conforms to the Noun's schema.
 
 #### Properties
 A Property of a Noun is a characteristic that has a label and a value, such as the `title` property of a File, or the `status` property of a Task. Each property has a schema that can defines its name, description, type, default value, range, cardinality, length or pattern. Properties of nouns can be required (having a minimim cardinality of one).

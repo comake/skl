@@ -7,7 +7,7 @@ The following pages provide a practical introduction for developers who want to:
 - [use schemas](./schema-fundamentals.md) to build software integrations using SKL
 - [use an engine](./engines.md) to execute schemas from code
 - [build schemas](./build-schemas.md) and make them available for others to use
-- [build an engine](./engines.md) in your language of choice
+- [build an engine](./build-engine.md) in your language of choice
 
 If you have any questions, please [reach out to us on Discord](https://discord.gg/stvfSB8kpG?ref=https://github.com/comake/skl-examples) or [open or contribute to a discussion](https://github.com/comake/skl/discussions).
 

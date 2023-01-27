@@ -1,4 +1,4 @@
-After defining Schemas, an SKL Engine will allow you to execute Verbs and Mappings from your programming language of choice. An Engine can be built in any programming language that can read the Schema!
+After defining Schemas, an SKL Engine will allow you to execute Verbs and Mappings from your programming language of choice. An Engine can be built in any programming language that can read the Schema! 
 
 ## Concepts
 
@@ -19,4 +19,4 @@ Now that you know what an SKL Engine does, you're ready to get started with one.
 
 We envision Engines being built in all major programming languages so that any project can use SKL, no matter the environment. If you're up to the task of creating an Engine in another language, or simply want to voice your desire for an Engine in a specific language, please [reach out to us on Discord](https://discord.gg/stvfSB8kpG?ref=https://github.com/comake/skl-examples) or [open or contribute to a discussion](https://github.com/comake/skl/discussions).
 
-
+**Note**: SKL Engines used to be called Standard Knowledge Query Language (SKQL) Engines.

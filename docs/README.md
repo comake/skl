@@ -1,10 +1,17 @@
 # Standard Knowledge Language
 
-Standard Knowledge Language (SKL) is an open source framework for integrating software tools and enabling interoperability. It allows you to connect to and use data by what it represents rather than where it's stored.
+Standard Knowledge Language (SKL) is an open-source framework for building composable software and enabling interoperability. It is a methodology for how software can connect to data and other software components through customizable abstractions called schemas.
 
-This documentation provides an introduction for developers who want to integrate data from other software tools into their applications using SKL.
+The following pages provide a practical introduction for developers who want to:
 
-## Overview
+- [use schemas](./schema-fundamentals.md) to build software integrations using SKL
+- [use an engine](./engines.md) to execute schemas from code
+- [build schemas](./build-schemas.md) and make them available for others to use
+- [build an engine](./engines.md) in your language of choice
+
+If you have any questions, please [reach out to us on Discord](https://discord.gg/stvfSB8kpG?ref=https://github.com/comake/skl-examples) or [open or contribute to a discussion](https://github.com/comake/skl/discussions).
+
+## Motivations
 
 Today, people lack clarity because each app they work with only shows them a partial view of their work. Trying to offer a holistic and integrated experience is hard and results in a messy web of one-to-one integrations that is hard to maintain. This is true both for companies trying to consolidate data between tools they use internally, and for software companies wanting to let their users push or pull data to or from other software tools.
 
@@ -19,14 +26,3 @@ The success of proposed methods is dependent on developers at different companie
 There is no perfect ontology for all use cases, and part of the value of Linked Data is that anyone can easily create their own or contribute to existing ontologies. For those software tools that do choose to invest in building Linked Data APIs, this independent proliferation of various (and sometimes competing) ontologies of Linked Data can make it so that there is still a lot of manual work that has to be done by humans to integrate data which is formatted according to different ontologies. An important missing piece is therefore the standard translation across various ontologies, representations of data, and software capabilities.
 
 Standard Knowledge Language solves these problems by defining a protocol for interacting with non-standard data formats and APIs through standard abstractions of data and capabilities. Unlike the approaches described above, SKL does not require existing API providers to change their APIs or offerings. Instead, it provides a streamlined way for developers to easily connect to a theoretically infinite number of APIs simultaneously.
-
-Specifically, Standard Knowledge Language defines:
-- **Nouns**: schemas for data structures representing concepts commonly used by software tools.
-- **Verbs**: schemas representing capabilities exposed by software tools (and their parameters and return values).
-- **Mappings**: sets of configurations which dictate how a program can translate between Nouns and Verbs and the unique API of any software tool.
-
-The Nouns, Verbs and Mappings of SKL make it so that:
-- Data can be understood by what it represents rather than relying on where it comes from or where it is stored. This is done using Nouns.
-- A developer, end user, or application can perform operations on/with any given Noun(s) regardless of where the data comes from or how it’s stored.
-- A developer, end user, or application can easily discover what Verbs (i.e. software capabilities) can be used over any given piece of data (i.e. a Noun) and vice versa.
-- Complex workflows, applications, and automations which integrate data from multiple tools (i.e., Integrations) can be easily built and customized with Nouns and Verbs such that they don’t have to interact with tool specific APIs.

@@ -4,9 +4,9 @@ Standard Knowledge Language (SKL) allows developers to interact with Integration
 
 To use SKL a developer needs two things:
 - Standard Knowledge Schemas
-- A Standard Knowledge Query Language Engine - to read schemas and execute Verbs and Mappings. You can use the prebuilt Javascript Engine or [build your own](./engine.md).
+- A Standard Knowledge Query Language Engine - to read schemas and execute Verbs and Mappings. You can use the prebuilt Javascript Engine or [build your own](./engines.md).
 
-This page focuses on Schemas. You can read more about SKQL Engines on the [Build an SKQL Engine](./engine.md) page.
+This page focuses on Schemas. You can read more about SKQL Engines on the [Build an SKQL Engine](./engines.md) page.
 
 ## Schemas
 

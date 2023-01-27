@@ -57,5 +57,5 @@ The components of the SKL ecosystem conform to Solid:
 - SKApps are compliant with Solid's concept of Solid Apps. This means that any SKApp should expect to communicate with SKDSs using the Linked Data Platform and authenticate users using Solid-OIDC.
 
 In addition, the SKL ecosystem adds several requirements on top of Solid:
-- **Schemas** - Each user's SKDS should store its own schemas. This makes it so that end users can customize and extend SKL as they see fit. When using SKL Verbs, a SKApp should use an [Engine](./engine.md) and set the Engine's schema source to the user's SKDS.
+- **Schemas** - Each user's SKDS should store its own schemas. This makes it so that end users can customize and extend SKL as they see fit. When using SKL Verbs, a SKApp should use an [Engine](./engines.md) and set the Engine's schema source to the user's SKDS.
 - **Queries & Mutations** - Coming Soon...

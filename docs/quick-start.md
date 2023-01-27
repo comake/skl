@@ -4,7 +4,7 @@
 
 ### 1. Install an Engine
 
-To quickly get started using SKL, you can use the prebuilt [SKQL Javascript Engine](https://github.com/comake/skql-js-engine) in a node.js project. Alternatively, you can [Build an Engine](./engines.md) in your language of choice.
+To quickly get started using SKL, you can use the prebuilt [SKL Javascript Engine](https://github.com/comake/skql-js-engine) in a node.js project. Alternatively, you can [Build an Engine](./engines.md) in your language of choice.
 
 
 Install via npm or yarn:

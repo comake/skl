@@ -16,7 +16,7 @@
 
 **Standard Knowledge Data Store (SKDS)**: a type of Integration that stores instances of Nouns, Verbs, and Mappings and/or other SKL logic on behalf of a developer or end user.
 
-**SKQL Engine**: a library of code that can read SKL Schemas and execute Verbs and Mappings. An Engine's main requirements are that developers using it can set a source of schemas, and call Verbs.
+**SKL Engine**: a library of code that can read SKL Schemas and execute Verbs and Mappings. An Engine's main requirements are that developers using it can set a source of schemas, and call Verbs.
 
 <!-- **Interface Component**: a discrete component displayed on a webpage or other application with a graphical user interface. Often used to display, select, or edit particular types of data to end users. Interface Components can be combined into sets, networks, or hierarchies to form a larger or more domain specific component (eg. a Card component that includes a Table component specifically built to render previews of Excel spreadsheets).
 

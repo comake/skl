@@ -1,10 +1,14 @@
-Thank you for taking the time to contribute! 🎉👍
+An SKL Engine is a code package that allows developers to call Verbs and Mappings defined in SKL Schemas from code.
+
+This guide introduces some of the key features an SKL Engine should implement to adhere to the SKL specification. A more detailed SKL specicifcation will be released soon.
 
 ## Implementation
 
 The essential requirements of an Engine are:
 1. Allow developers to set a source of schemas.
 2. Allow developers to call Verbs.
+
+In addition to these two requirements, an Engine may also expose the ability to create and update SKL Schemas in the schema source.
 
 ### Schema source
 
@@ -13,7 +17,7 @@ A developer using an Engine should be able to set the source of the schemas they
 - read from a file
 - queried from an SKDS (see [Ecosystem](./ecosystem.md) for more info)
 
-{% hint style="info" %} All examples in this section use the prebuilt Javascript SKQL Engine. {% endhint %}
+{% hint style="info" %} All examples in this section use the prebuilt Javascript SKL Engine. {% endhint %}
 
 Supplied via a variable:
 ```javascript
@@ -79,7 +83,7 @@ You can see more RML processors on the [RML Implementation Report](https://rml.i
 
 {% hint style="info" %}
 Validation of [SHACL Shapes](https://www.w3.org/TR/shacl/) can be performed using an existing SHACL engine, such as:
-- [rdf-validate-shacl](https://github.com/zazuko/rdf-validate-shacl) - an open source SHACL validator written purely in Javascript on top of the [RDFJS](https://rdf.js.org/) stack. Used by our existing SKQL Engine.
+- [rdf-validate-shacl](https://github.com/zazuko/rdf-validate-shacl) - an open source SHACL validator written purely in Javascript on top of the [RDFJS](https://rdf.js.org/) stack. Used by our existing SKL Javascript Engine.
 - [pySHACL](https://github.com/RDFLib/pySHACL) - an open source SHACL validator library for python.
 - [SHaclEX](https://github.com/weso/shaclex) - an open source Scala implementation of SHEX and SHACL.
 {% endhint %}

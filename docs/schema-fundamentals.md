@@ -13,7 +13,8 @@ When building software with SKL, schemas are used for three main purposes:
 2. to validate that data conforms to specific data structures
 3. as configuration detailing what capabilities are possible and how those capabilities are performed
 
-SKL schemas can be one of three types:
+There are three types of SKL Schemas:
+
 - **Nouns**: describe data structures representing concepts commonly used by software tools
 - **Verbs**: represent capabilities exposed by software tools (and their parameters and return values)
 - **Mappings**: sets of configurations which dictate how a program can translate between Nouns and Verbs and the unique API of any software tool.

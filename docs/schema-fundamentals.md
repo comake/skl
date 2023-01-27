@@ -24,7 +24,7 @@ The Nouns, Verbs and Mappings of SKL make it so that:
 - A developer, end user, or application can easily discover what Verbs (i.e. software capabilities) can be used over any given piece of data (a Noun) and vice versa.
 - Complex workflows, applications, and automations which integrate data from multiple tools (i.e., Integrations) can be easily built and customized with Nouns and Verbs such that they don’t have to interact with tool specific APIs nor create and manage specialized code for each.
 
-### Nouns {#nouns}
+## Nouns {#nouns}
 A Noun is a schema for a data structure representing a concept used by software tools. When you use SKL, everything is translated through a Noun: emails, notes, webpages, files, podcast episodes, news articles, receipts, prescriptions, medications, locations, etc.
 
 Many software tools use data structures with the same name but with slight differences. Nouns are an abstraction of these different data structures that enables a higher degree of interoperability between them. Their schemas include:
@@ -48,7 +48,7 @@ The schema that entities of a Noun must conform to is defined using the [Shapes 
 
 {% hint style="info" %} We acknowledge that it's impossible to create a single ontology that can appease every use case. In addition, it's a huge undertaking to attempt to model an abstraction for every data structure a software tool may need to work with. In light of these facts, SKL Schemas are highly modular, customizable, and are evaluated at runtime to enable any capabilities an application or end user may need. In addition, we are continuously adding to the [SKL Dictionary](https://github.com/comake/skl-dictionary),  an open source Library of Nouns, Verbs, and Mappings which developers can use and contribute to. {% endhint %}
 
-### Verbs {#verbs}
+## Verbs {#verbs}
 
 A Verb is a representation of a capability one or more software tools.
 

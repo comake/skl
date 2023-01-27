@@ -6,7 +6,7 @@ Standard Knowledge Language defines abstractions of data and capabilities throug
 - GraphQL uses schemas to define the data types and possible operations of an API
 - SQL servers use schemas to define the types and fields of objects in a database and informs what queries are possible
 
-## Standard Knowledge Schemas
+### Standard Knowledge Schemas
 
 When building software SKL, schemas are used for three main purposes:
 1. to describe and document data structures

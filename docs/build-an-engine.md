@@ -22,7 +22,7 @@ A developer using an Engine should be able to set the source of the schemas they
 Supplied via a variable:
 ```javascript
 const schema = [ ... ];
-const engine = new SKQL({ 
+const engine = new SKLEngine({ 
   type: 'memory',
   schemas: schema
 });
@@ -30,7 +30,7 @@ const engine = new SKQL({
 
 Queried from an SKDS:
 ```javascript
-const engine = new SKQL({ 
+const engine = new SKLEngine({ 
   type: 'sparql',
   endpointUrl: 'https://myskds.standard.storage/'
 });

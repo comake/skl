@@ -4,7 +4,7 @@ Standard Knowledge Language (SKL) is an open-source framework for building compo
 
 The following pages provide a practical introduction for developers who want to:
 
-- [use schemas](./schema-fundamentals.md) to build software integrations using SKL
+- [use schemas](./schemas.md) to build software integrations using SKL
 - [use an engine](./engines.md) to execute schemas from code
 - [build schemas](./build-schemas.md) and make them available for others to use
 - [build an engine](./build-an-engine.md) in your language of choice

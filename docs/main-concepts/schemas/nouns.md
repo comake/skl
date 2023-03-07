@@ -10,6 +10,10 @@ The developers of [Google Drive](https://www.google.com/drive/), [Dropbox](https
 
 In this way, Nouns are abstractions of the commonalities between each Integration’s representation of a concept but are also extendable and customizable, allowing the unique fields each tool has to still exist on entities.
 
+{% hint style="info" %}
+We acknowledge that it's impossible to create a single ontology that can appease every use case. In addition, it's a huge undertaking to attempt to model an abstraction for every data structure a software tool may need to work with. In light of these facts, SKL Schemas are highly modular, customizable, and are evaluated at runtime to enable any capabilities an application or end user may need. In addition, we are continuously adding to the \[SKL Dictionary]\(https://github.com/comake/skl-dictionary), an open source Library of Nouns, Verbs, and Mappings which developers can use and contribute to.
+{% endhint %}
+
 ## Entity
 
 An entity is an instance of a Noun which conforms to the Noun's schema.
@@ -58,7 +62,15 @@ Every Noun conforms to the Noun SHACL [NodeShape](https://www.w3.org/TR/shacl/#n
 }
 ```
 
-This NodeShape states that every Noun must have a label, and may optionally have a description and a JSON-LD context. You can see the documentation for this Noun Schema in the [SKL Dictionary](https://github.com/comake/skl-dictionary/tree/main/schemas/core/noun).
+Using code, this NodeShape can be transformed into a table that describes the Noun Schema:
+
+| name | Type | Required | Description | Cardinality |
+| ---- | ---- | ---- | ----------- | ---- |
+| label | [string](http://www.w3.org/2001/XMLSchema#string) | true | A human readable identifier for this Noun. | 1..1 |
+| description | [string](http://www.w3.org/2001/XMLSchema#string) | false | A description of what this Noun represents. | 0..1 |
+| context | [JSON](http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON) | false | A JSON-LD Context Definition used to compact entities of this noun into a more human readable format | 0..1 |
+
+As you can see, this NodeShape states that every Noun must have a label, and may optionally have a description and a JSON-LD context. You can see the full documentation for the Noun Schema in the [SKL Dictionary](https://github.com/comake/skl-dictionary/tree/main/schemas/core/noun).
 
 In addition to conforming to the Noun Schema, every Noun is also a SHACL NodeShape and an OWL Class. For example, here is a shortened version of a File Noun:
 
@@ -88,7 +100,10 @@ In addition to conforming to the Noun Schema, every Noun is also a SHACL NodeSha
       "shacl:name": "mimeType"
     },
     // ... 
-  ]
+  ],
+  "skl:context" {
+    // ...
+  }
 }
 ```
 
@@ -98,6 +113,6 @@ You can see the full example of the File noun in the [SKL Dictionary](https://gi
 Most Noun schemas have the `shacl:closed` property set to `false`. This means that data conforming to the schema can include any arbitrary properties not explicitly enumerated as a property in the schema.
 {% endhint %}
 
-{% hint style="info" %}
-We acknowledge that it's impossible to create a single ontology that can appease every use case. In addition, it's a huge undertaking to attempt to model an abstraction for every data structure a software tool may need to work with. In light of these facts, SKL Schemas are highly modular, customizable, and are evaluated at runtime to enable any capabilities an application or end user may need. In addition, we are continuously adding to the \[SKL Dictionary]\(https://github.com/comake/skl-dictionary), an open source Library of Nouns, Verbs, and Mappings which developers can use and contribute to.
-{% endhint %}
+## Context
+
+Every Noun can have a JSON-LD context so that entities of the Noun can be [compacted](https://www.w3.org/TR/json-ld11/#compacted-document-form) into a more human-readable form. This is useful when developers of APIs or other query interfaces use SKL and store entities as JSON-LD but want to expose entities to users or other software in a format they are more familiar with.

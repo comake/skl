@@ -4,15 +4,19 @@ Standard Knowledge Language defines abstractions of data and capabilities throug
 
 ## What is a schema?
 
-**Schemas** are sets of declarative configuration that describe structured data and software components and how the data formats and capabilities of those software components can be used. Many software tools and frameworks use schemas as a basis for describing the function of a system. For example, GraphQL uses schemas to define the data types and possible operations of an API. SQL servers use schemas to define the types and fields of objects in a database and informs what queries are possible.
+Many software tools and frameworks use schemas as a basis for describing the data formats used by and function of a system. For example, GraphQL uses schemas to define the data types and possible operations of an API. SQL servers use schemas to define the types and fields of objects in a database and informs what queries are possible.
 
 ## Standard Knowledge Schemas
 
-When building software with SKL, schemas are used for three main purposes:
+In SKL, **Schemas** are sets of declarative configuration that describe structured data and software components and how the data formats and capabilities of those software components can be used.
+
+When building software with SKL, schemas serve three main purposes:
 
 1. To describe and document data structures
 2. To validate that data conforms to specific data structures
 3. As configuration detailing what capabilities are possible and how those capabilities are performed
+
+Because they are declarative (written in JSON), SKL Schemas can be used in any programming environment. This enables them to be re-used by many developers and projects, including as a cross-language type system.
 
 There are three types of SKL Schemas:
 

@@ -6,9 +6,9 @@ Many software tools use data structures with the same name but with slight diffe
 
 ## Example
 
-The developers of [Google Drive](https://www.google.com/drive/), [Dropbox](https://www.dropbox.com/), and [Box](https://www.box.com/) each defined a different data structure to represent files in their respective software and APIs. Normally, when integrating files from these tools into an application, a developer would have to write different code to work with each. Instead, using SKL, the unique data structures of each tool can be translated (via [Mappings](https://github.com/comake/skl/blob/main/fundamentals/README.md#mappings)) into instances of the File Noun. The resulting File entities from each system include common fields like name, mime type, and size. They may also include fields that only some systems support such as a unique hash of the contents of the file, which Box and Dropbox support but Google Drive doesn't. Dropbox also has support for adding any arbitrary key/value data to files, this information will be included in any File entities from Dropbox.
+The developers of [Google Drive](https://www.google.com/drive/), [Dropbox](https://www.dropbox.com/), and [Box](https://www.box.com/) each defined a different data structure to represent files in their respective software and APIs. Normally, when integrating files from these tools into an application, a developer would have to write different code to work with each. Instead, using SKL, the unique data structures of each tool can be translated (via [Mappings](https://github.com/comake/skl/blob/main/fundamentals/README.md#mappings)) into instances of the File Noun. The resulting File entities from each system include common properties like name, mime type, and size. They may also include properties that only some systems support such as a unique hash of the contents of the file, which Box and Dropbox support but Google Drive doesn't. Dropbox also has support for adding any arbitrary key/value data to files, this information will be included in any File entities from Dropbox.
 
-In this way, Nouns are abstractions of the commonalities between each Integration’s representation of a concept but are also extendable and customizable, allowing the unique fields each tool has to still exist on entities.
+In this way, Nouns are abstractions of the commonalities between each Integration’s representation of a concept but are also extendable and customizable, allowing the unique properties each tool has to still exist on entities.
 
 {% hint style="info" %}
 We acknowledge that it's impossible to create a single ontology that can appease every use case. In addition, it's a huge undertaking to attempt to model an abstraction for every data structure a software tool may need to work with. In light of these facts, SKL Schemas are highly modular, customizable, and are evaluated at runtime to enable any capabilities an application or end user may need. In addition, we are continuously adding to the \[SKL Dictionary]\(https://github.com/comake/skl-dictionary), an open source Library of Nouns, Verbs, and Mappings which developers can use and contribute to.
@@ -91,15 +91,14 @@ In addition to conforming to the Noun Schema, every Noun is also a SHACL NodeSha
     },
     {
       "shacl:maxCount": 1,
-      "shacl:path": "skl:size",
+      "shacl:path": "example:size",
       "shacl:name": "size"
     },
     {
       "shacl:maxCount": 1,
-      "shacl:path": "skl:mimeType",
+      "shacl:path": "example:mimeType",
       "shacl:name": "mimeType"
-    },
-    // ... 
+    }
   ],
   "skl:context" {
     // ...
@@ -116,3 +115,53 @@ Most Noun schemas have the `shacl:closed` property set to `false`. This means th
 ## Context
 
 Every Noun can have a JSON-LD context so that entities of the Noun can be [compacted](https://www.w3.org/TR/json-ld11/#compacted-document-form) into a more human-readable form. This is useful when developers of APIs or other query interfaces use SKL and store entities as JSON-LD but want to expose entities to users or other software in a format they are more familiar with.
+
+An shortened example of the [File](https://github.com/comake/skl-dictionary/blob/main/schemas/nouns/file/schema.json) Noun's context and expanded and compacted examples of a File entity:
+```json
+// The File Noun's skl:context property:
+{
+  "label": {
+    "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+    "@type": "http://www.w3.org/2001/XMLSchema#string"
+  },
+  "size": {
+    "@id": "https://example.com/size",
+    "@type": "http://www.w3.org/2001/XMLSchema#integer"
+  },
+  "mimeType": {
+    "@id": "https://example.com/mimeType",
+    "@type": "http://www.w3.org/2001/XMLSchema#string"
+  }
+}
+
+// Expanded entity form:
+{
+  "@id": "https://example.com/data/1",
+  "@type": "https://example.com/File",
+  "http://www.w3.org/2000/01/rdf-schema#label": {
+    "@type": "http://www.w3.org/2001/XMLSchema#string",
+    "@value": "presentation_final.pptx"
+  },
+  "https://example.com/size": {
+    "@type": "http://www.w3.org/2001/XMLSchema#integer",
+    "@value": "156"
+  },
+  "https://example.com/mimeType": {
+    "@type": "http://www.w3.org/2001/XMLSchema#string"
+    "@value": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+  },
+}
+
+// Compacted entity form:
+{
+  "@context": { /* context omitted for brevity (displayed above) */ },
+  "@id": "https://example.com/data/1",
+  "@type": "https://example.com/File",
+  "label": "presentation_final.pptx",
+  "size": "156",
+  "mimeType": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+}
+
+```
+
+Any tool which implements the [JSON-LD](https://json-ld.org/) specification, such as [jsonld.js](https://github.com/digitalbazaar/jsonld.js), can be used to perform compaction or expansion.

@@ -25,4 +25,10 @@ You can see the full schema for a Verb in the [SKL Dictionary](https://github.co
 
 ## Schedules
 
-In addition to being explicitly called by a developer's code, Verbs may be configured to be run at a specific time, upon a specific schedule, or in response to specific events. For example, a Verb can specify that it should be run in response to an event from a webhook registered with the API of an Integration.
+{% hint style="warning" %}
+Coming soon. In addition to being explicitly called by a developer's code, we envision Verbs being able to be configured to be run at a specific time, upon a specific schedule, or in response to specific events. For example, a Verb can specify that it should be run in response to an event from a webhook registered with the API of an Integration. Verb scheduling will likely use a format like [cron](https://en.wikipedia.org/wiki/Cron). 
+
+Please see the [Issue on Github](https://github.com/comake/skl/issues/1) or [contact us](https://discord.gg/stvfSB8kpG?ref=https://github.com/comake/skl-examples) to get involved.
+{% endhint %}
+
+

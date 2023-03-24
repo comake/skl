@@ -2,7 +2,7 @@
 
 A Mapping is a set of configuration which dictates how a program can translate between Nouns and Verbs and the unique API of any software tool.
 
-Mappings are the glue which holds the components of SKL together and that allow them to interoperate. By having Mappings defined separately from [Nouns](./nouns.md), [Verbs](./verbs.md), and Integrations, users or developers can more easily compose components of the system together.
+Mappings are the glue which holds the components of SKL together and that allow them to interoperate. By having Mappings defined separately from [Nouns](./nouns.md), [Verbs](./verbs.md), and [Integrations](../../other/terminology.md#integration), users or developers can more easily compose components of the system together.
 
 The schema for a Mapping has a name, a type, and sets of declarative rules that define how Nouns or Verbs are to be transformed. Mappings use the [RDF Mapping Language (RML)](https://rml.io/) to express how data is translated.
 

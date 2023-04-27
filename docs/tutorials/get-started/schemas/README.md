@@ -1,3 +1,5 @@
+THIS IS OLD AND NOT USED
+
 # Schemas
 
 Standard Knowledge Language defines abstractions of data and capabilities through schemas.

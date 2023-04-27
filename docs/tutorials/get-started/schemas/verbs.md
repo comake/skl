@@ -1,3 +1,5 @@
+THIS IS OLD AND NOT USED
+
 # Verbs
 
 A Verb is a representation of a capability in one or more software tools.
@@ -16,9 +18,9 @@ The schema for a Verb specifies its expected parameters and expected return valu
 
 | name | Type | Required | Description | Cardinality |
 | ---- | ---- | ---- | ----------- | ---- |
-| parameters | http://www.w3.org/ns/shacl#NodeShape | false | A SHACL NodeShape specifying the format and constraints that the parameters of a Verb must conform to. | 0..1 |
+| parameters | [NodeShape](http://www.w3.org/ns/shacl#NodeShape) | false | A SHACL NodeShape specifying the format and constraints that the parameters of a Verb must conform to. | 0..1 |
 | parametersContext | [JSON](http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON) | false | A JSON-LD Context Definition used to expand the parameters supplied a Verb so that they can be validated against the Verb's `parameters` NodeShape. | 0..1 |
-| returnValue | http://www.w3.org/ns/shacl#NodeShape | false | A SHACL NodeShape specifying the format and constraints that the return value of a Verb must conform to. | 0..1 |
+| returnValue | [NodeShape](http://www.w3.org/ns/shacl#NodeShape) | false | A SHACL NodeShape specifying the format and constraints that the return value of a Verb must conform to. | 0..1 |
 | returnValueFrame | [JSON](http://www.w3.org/1999/02/22-rdf-syntax-ns#JSON) | false | A JSON-LD Frame used to transform the JSON-LD returned by a Mapping to this Verb. | 0..1 |
 
 You can see the full schema for a Verb in the [SKL Dictionary](https://github.com/comake/skl-dictionary/blob/main/schemas/core/verb/schema.json).
@@ -26,7 +28,7 @@ You can see the full schema for a Verb in the [SKL Dictionary](https://github.co
 ## Schedules
 
 {% hint style="warning" %}
-Coming soon. In addition to being explicitly called by a developer's code, we envision Verbs being able to be configured to be run at a specific time, upon a specific schedule, or in response to specific events. For example, a Verb can specify that it should be run in response to an event from a webhook registered with the API of an Integration. Verb scheduling will likely use a format like [cron](https://en.wikipedia.org/wiki/Cron). 
+🚧 Under development. In addition to being explicitly called by a developer's code, we envision Verbs being able to be configured to be run at a specific time, upon a specific schedule, or in response to specific events. For example, a Verb can specify that it should be run in response to an event from a webhook registered with the API of an Integration. Verb scheduling will likely use a format like [cron](https://en.wikipedia.org/wiki/Cron). 
 
 Please see the [Issue on Github](https://github.com/comake/skl/issues/1) or [contact us](https://discord.gg/stvfSB8kpG?ref=https://github.com/comake/skl-examples) to get involved.
 {% endhint %}

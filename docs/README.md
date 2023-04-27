@@ -11,25 +11,36 @@ Standard Knowledge Language (SKL) is an open-source framework for building compo
       <th data-hidden data-card-target data-type="content-ref"></th>
     </tr>
   </thead>
+  <h2>Explore the Docs</h2>
   <tbody>
     <tr>
       <td>
-        <strong>About SKL</strong>
+        <strong>Concepts</strong>
       </td>
-      <td>Learn more about why SKL was created</td>
+      <td>Discover the concepts behind SKL features and capabilities</td>
       <td></td>
       <td>
-        <a href="about-skl.md">about-skl.md</a>
+        <a href="concepts/README.md">README.md</a>
       </td>
     </tr>
     <tr>
       <td>
-        <strong>Quick Start</strong>
+        <strong>Motivations</strong>
+      </td>
+      <td>Learn more about why SKL was created</td>
+      <td></td>
+      <td>
+        <a href="motivations.md">motivations.md</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Get Started</strong>
       </td>
       <td>Jump in and start integrating software</td>
       <td></td>
       <td>
-        <a href="quick-start.md">quick-start.md</a>
+        <a href="next-steps/get-started/README.md">README.md</a>
       </td>
     </tr>
     <tr>

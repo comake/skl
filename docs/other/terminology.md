@@ -26,3 +26,6 @@ A type of Integration that stores instances of Nouns, Verbs, and Mappings and/or
 
 ### SKL Engine
 A library of code that can read SKL Schemas and execute Verbs and Mappings. An Engine's main requirements are that developers using it can set a source of schemas and call Verbs. (**Note**: SKL Engines used to be called Standard Knowledge Query Language (SKQL) Engines.)
+
+### Operation
+

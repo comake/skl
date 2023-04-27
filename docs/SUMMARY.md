@@ -1,25 +1,28 @@
 # Table of contents
 
 * [Welcome](README.md)
-* [About SKL](about-skl.md)
-* [Quick Start](quick-start.md)
 
-## Main Concepts
+## Concepts
 
-* [Schemas](main-concepts/schemas/README.md)
-  * [Nouns](main-concepts/schemas/nouns.md)
-  * [Verbs](main-concepts/schemas/verbs.md)
-  * [Mappings](main-concepts/schemas/mappings.md)
-* [Engines](main-concepts/engines.md)
-* [Ecosystem](main-concepts/ecosystem.md)
+* [Overview](concepts/README.md)
+* [Integrations](concepts/integrations.md)
+* [Accounts](concepts/accounts.md)
+* [Nouns](concepts/nouns.md)
+* [Verbs](concepts/verbs.md)
+* [Mappings](concepts/mappings.md)
+* [Schemas](concepts/schemas.md)
+* [Engines](concepts/engines.md)
+* [Ecosystem](concepts/ecosystem.md)
 
-## Next Steps
+## Tutorials
 
-* [Build Schemas](next-steps/build-schemas.md)
-* [Build an Engine](next-steps/build-an-engine.md)
+* [Get Started](tutorials/get-started/README.md)
+* [Build Schemas](tutorials/build-schemas.md)
+* [Build an Engine](tutorials/build-an-engine.md)
 
 ## Other
 
+* [Motivations](other/motivations.md)
 * [FAQs](other/faqs.md)
 * [Conceptual Example](other/conceptual-example.md)
 * [Use Cases](other/use-cases.md)

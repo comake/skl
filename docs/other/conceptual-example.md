@@ -32,15 +32,15 @@ Going back to the moment that you decide you want your users to be able to share
 
 Imagine that you decide to use SKL. Instead of choosing a few specific tools to build your first integrations with and researching each of their third-party APIs, now you simply have to look through the Standard Knowledge Language Dictionary for the intended capability that you want to support.
 
-You want your users to be able to “share” work elements from other apps, so you start by searching for a [Verb](../main-concepts/schemas/#verbs) called “share” in the SKL Dictionary. If the Verb you are looking for exists, you can install an [SKL Engine](../main-concepts/engines.md) and start using the Verb right away to access the sharing capabilities from third-party tools that support sharing. As you will see below, this can drastically improve your ability to quickly build and easily manage integrations for “sharing”.
+You want your users to be able to “share” work elements from other apps, so you start by searching for a [Verb](../concepts/verbs.md) called “share” in the SKL Dictionary. If the Verb you are looking for exists, you can install an [SKL Engine](../concepts/engines.md) and start using the Verb right away to access the sharing capabilities from third-party tools that support sharing. As you will see below, this can drastically improve your ability to quickly build and easily manage integrations for “sharing”.
 
 ![](../.gitbook/assets/new-developer-workflow.jpg)
 
-In the event that the “share” Verb is missing, SKL empowers you to easily create its definition without having to write any code or deal with any infrastructure. Similarly, if any [Mapping](../main-concepts/schemas/#mappings) between a desired third party tool and the “share” Verb is missing, you can easily add the new integration in a matter of minutes.
+In the event that the “share” Verb is missing, SKL empowers you to easily create its definition without having to write any code or deal with any infrastructure. Similarly, if any [Mapping](../concepts/mappings.md) between a desired third party tool and the “share” Verb is missing, you can easily add the new integration in a matter of minutes.
 
 By using SKL, you are able to reference the “share” Verb directly within your code. This means that you don’t have to write out any unique code or logic for each third-party integration. Your app’s code doesn’t need to have any custom code that deals with third-party SDKs or APIs. Instead, you are now able to build all your application logic over the “share” Verb which abstracts and standardizes the capabilities from a potentially infinite number of unique third-party “sharing” endpoints. This abstraction is a small but crucial change that fundamentally improves your ability to build and maintain integrations.
 
-Now, nothing has to be repeated every time you build a new integration! All that you have to do is find or create a [Mapping](../main-concepts/schemas/#mappings) between SKL’s standard “share” Verb and the sharing endpoint within each desired integration. You are now able to build each of your next twenty integrations in a matter of minutes, rather than weeks or months!
+Now, nothing has to be repeated every time you build a new integration! All that you have to do is find or create a [Mapping](../concepts/mappings.md) between SKL’s standard “share” Verb and the sharing endpoint within each desired integration. You are now able to build each of your next twenty integrations in a matter of minutes, rather than weeks or months!
 
 ![](../.gitbook/assets/new-developer-implementation.jpg)
 

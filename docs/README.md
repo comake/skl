@@ -30,7 +30,7 @@ Standard Knowledge Language (SKL) is an open-source framework for building compo
       <td>Learn more about why SKL was created</td>
       <td></td>
       <td>
-        <a href="motivations.md">motivations.md</a>
+        <a href="other/motivations.md">motivations.md</a>
       </td>
     </tr>
     <tr>
@@ -40,7 +40,7 @@ Standard Knowledge Language (SKL) is an open-source framework for building compo
       <td>Jump in and start integrating software</td>
       <td></td>
       <td>
-        <a href="next-steps/get-started/README.md">README.md</a>
+        <a href="tutorials/get-started/README.md">README.md</a>
       </td>
     </tr>
     <tr>

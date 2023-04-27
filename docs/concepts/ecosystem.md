@@ -44,7 +44,7 @@ Lets assume that a developer is building a Universal File Browser which displays
 
 Instead of the developer storing the metadata about files and folders in a siloed database they control, they store the data in a user's SKDS. SKL includes schema and special Verbs for querying and saving data to SKDSs.
 
-In the future, the user might use another Standard Knowledge Application for signing documents. This application, once authorized by the user to read data from their SKDS, can query for [entities](./nouns.md#entity) conforming to the standard File Noun in the SKDS which the user may need to sign. In this way, the two applications can interoperate on the same data because they have a common understanding of its schema.
+In the future, the user might use another Standard Knowledge Application for signing documents. This application, once authorized by the user to read data from their SKDS, can query for [entities](./nouns.md#entities) conforming to the standard File Noun in the SKDS which the user may need to sign. In this way, the two applications can interoperate on the same data because they have a common understanding of its schema.
 
 ## Solid <a href="#solid" id="solid"></a>
 

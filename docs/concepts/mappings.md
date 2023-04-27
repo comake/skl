@@ -8,9 +8,7 @@ Mappings are the glue which holds the components of SKL together and that allow 
 
 The schema for a Mapping has a name, a type, and sets of declarative rules that define how Nouns or Verbs are to be transformed. Mappings use the [RDF Mapping Language (RML)](https://rml.io/) to express how data is translated.
 
-SKL includes multiple types of Mappings for translating between different types of components.
-
-They are:
+SKL includes multiple types of Mappings for translating between different types of components. They are:
 
 ### Verb-Integration Mapping
 

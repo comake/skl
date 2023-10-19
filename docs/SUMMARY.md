@@ -19,7 +19,7 @@
 * [Build Schemas](tutorials/build-schemas.md)
 * [Build an Engine](tutorials/build-an-engine.md)
 
-# Specification
+## Specification
 * [Introduction](spec/introduction.md)
 
 ## Other

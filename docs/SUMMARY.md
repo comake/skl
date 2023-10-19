@@ -12,7 +12,6 @@
 * [Mappings](concepts/mappings.md)
 * [Schemas](concepts/schemas.md)
 * [Engines](concepts/engines.md)
-* [Ecosystem](concepts/ecosystem.md)
 
 ## Tutorials
 
@@ -20,10 +19,12 @@
 * [Build Schemas](tutorials/build-schemas.md)
 * [Build an Engine](tutorials/build-an-engine.md)
 
+# Specification
+* [Introduction](spec/introduction.md)
+
 ## Other
 
 * [Motivations](other/motivations.md)
 * [FAQs](other/faqs.md)
 * [Conceptual Example](other/conceptual-example.md)
 * [Use Cases](other/use-cases.md)
-* [Terminology](other/terminology.md)

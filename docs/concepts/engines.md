@@ -2,11 +2,18 @@
 
 ## What is an Engine?
 
-An SKL Engine is a code package that allows developers to call Verbs and Mappings defined in SKL Schemas from code.
+An SKL Engine is a code package that allows developers to do two things:
+
+1. query and manipulate stored SKL Schemas and data 
+2. call Verbs and Mappings defined in SKL Schemas from code.
 
 An Engine can be built in any programming language that can read the Schema (JSON)!
 
-## Why do we need an Engine?
+## Reading and Writing Data
+
+
+
+## Calling Verbs
 
 In most programming languages and libraries, a function's implementation is defined ahead of time and has a predefined and specific purpose. This is conventional because it reduces ambiguity and allows code to be precise. However, because each language or library has potentially hundreds of function definitions, developers have to read lots of documentation and write code to use the unique functions of each language or library they need to incorporate.
 

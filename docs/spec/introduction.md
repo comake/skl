@@ -68,12 +68,15 @@ The core SKL Ontology preferred prefix is `skl`.
 
 ## Schemas
 
-A project which uses SKL contains or accesses a collection of SKL Schemas which define the data formats and capabilities the project uses.
+A project which uses SKL contains or accesses a collection of SKL Schemas which define the data formats and capabilities the project uses. Schemas may describe anything about the project from the types of data it displays, how it displays that data, user accounts, the permissions of users and capabilities they have over data, what infrastructure hosts the project, etc.
 
 SKL Schemas are modeled using the Resouce Description Framework ([RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework)), and are most commonly viewed and edited in the [JSON-LD](https://json-ld.org/) format. As RDF, Schemas are identified by and relate to one another via URI. This forms a graph of the data formats and capabilities a project uses.
 
 The SKL Ontology consists of SKL specific classes, some of which use other ontologies and specificiations such as [RML](https://rml.io/specs/rml/), [SHACL](https://www.w3.org/TR/shacl/), and [OpenAPI](https://spec.openapis.org/oas/v3.1.0)
 
+A project which uses SKL typically begins with stakeholders defining the data types, or **Nouns**, necessary for the system they want to build and the **Integrations** that the data will come from or be submitted to. Next, they define **Verbs** which represent the capabilities exposed by the API of one or more **Integrations**. Finally, they create **Mappings** to translate data between **Nouns** and **Verbs** and the unique API of any **Integration**.
+
+These **Nouns**, **Integrations**, **Verbs**, and **Mappings**, collectively make up a project's SKL Schemas. Schemas are typically stored in a graph database so that they can be referenced and queried by their associations with eachother. Alternatively, implementers may store schemas as JSON-LD files which get loaded into memory whenever some temporary program is run.
 
 ## Nouns
 

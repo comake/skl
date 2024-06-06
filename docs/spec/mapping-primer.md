@@ -58,7 +58,7 @@ Lets say that an API operation responds to us with a list of event objects that 
 
 We want to map it into a JSON-LD like this
 
-```json
+```js
 {
   "@type": "skl:Collection",
   "example:events": [
@@ -92,7 +92,7 @@ We want to map it into a JSON-LD like this
 
 We can use a `returnValueMapping` like the one below. Note the comments sprinkled within the JSON.
 
-```json
+```js
 { // This TriplesMap will create our top level object, the `skl:Collection`
   "@type": "rr:TriplesMap",
   "rml:logicalSource": {
@@ -204,7 +204,7 @@ We can use a `returnValueMapping` like the one below. Note the comments sprinkle
 
 If we used this `returnValueMapping` by itself, we might get some JSON we don't like. We use a [JSON-LD Framing](https://www.w3.org/TR/json-ld11-framing/) to make sure the JSON is in the format we want. Below is the `skl:returnValueFrame` we'd use with this mapping.
 
-```json
+```js
 {
   "@context": {
     // Tells JSON-LD that these fields are supposed to be sets, or unordered lists, even if there's just one item.
